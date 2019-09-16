@@ -34,6 +34,16 @@ body {
   height: 30px;
 }
 
+.tab-menu img {
+  height: 20px;
+}
+
+.tab-menu-item {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 8px;
+}
+
 /* MENU FECHADO */
 .tab-menu {
   position: absolute;
@@ -58,22 +68,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.tab-menu img {
-  height: 20px;
-}
-
 .tab-menu-items {
   display: none;
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
   padding: 10px 0;
-}
-
-.tab-menu-item {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  padding: 8px;
 }
 
 /* MENU ABERTO */

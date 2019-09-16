@@ -1,0 +1,21 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9b2b0;
+  user-select: none;
+}
+
+.card {
+  height: 200px;
+  width: 300px;
+  background: #ed5852;
+}
