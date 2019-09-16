@@ -59,6 +59,11 @@ body {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  overflow: hidden;
+
+  transition-property: height;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.17, 2, 0.43, 0.82);
 }
 
 .tab-menu-icon {
@@ -66,14 +71,23 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  transition-property: transform, opacity;
+  transition-duration: .3s;
 }
 
 .tab-menu-items {
-  display: none;
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
   padding: 10px 0;
+  display: flex;
+
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-delay: 0;
+
+  transform: translateY(145px);
 }
 
 /* MENU ABERTO */
@@ -82,9 +96,11 @@ body {
 }
 
 .tab-menu-open .tab-menu-icon {
-  display: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(225deg);
 }
 
 .tab-menu-open .tab-menu-items {
-  display: flex;
+  transition-delay: .3s;
+  transform: translateY(0);
 }
